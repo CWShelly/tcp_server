@@ -9,12 +9,10 @@ const server = net.createServer(function(socket){
     logger.write(data);
     var date = new Date();
     var time = date.getTime();
-
     const logger2 = fs.createWriteStream(__dirname + '/logs/' + time +' .txt');
     logger2.write(data);
   });
-console.log(fs.readdirSync(__dirname + '/logs/'));
-console.log(fs.readdirSync(__dirname + '/logs/').length);
+
 });
 
 

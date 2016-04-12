@@ -9,7 +9,6 @@ describe('gulpfile exists', ()=>{
   });
 });
 
-
 describe('a new file should be there',()=>{
   it('should have a new file',()=>{
     expect(fs.readdirSync(__dirname + '/../logs').length).to.be.above(1);
